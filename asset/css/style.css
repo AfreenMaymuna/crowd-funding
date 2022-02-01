@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(106, 205, 235);
+}
+
+header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.header-container{
+    padding-top: 30px;
+    width: 1100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.list-items{
+    list-style-type: none;
+    display: flex;
+}
+.list-item{
+    padding: 0 16px;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.nav-link:hover{
+    color: thistle;
+}
