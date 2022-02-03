@@ -3,9 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(106, 205, 235);
+:root{
+    --moderate-cyan: hsl(176, 50%, 47%);
+    --dark-cyan: hsl(176, 72%, 28%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 48%);
+    --bg-color: rgb(188, 188, 188/ 7%)
 }
+
+body{
+    background-color: salmon;
+    color: var(--dark-gray);
+}
+h1, h2, h3, h4 ,h5, h6{
+    color: var(--black);
+}
+
 
 header{
     background-repeat: no-repeat;
@@ -35,4 +48,57 @@ header{
 }
 .nav-link:hover{
     color: thistle;
+}
+/* ======================
+   Hero Section
+ =========================*/
+.container{
+    width: 600px;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.secondary-logo{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.section-hading{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.section-hading h1{
+    margin-bottom: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    border: 0;
+    background-color: skyblue;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 8px 20px;
+    height: 50px;
+    color: white;
+}
+.buttons button:first-child{
+    background-color: var(--moderate-cyan);
+}
+.buttons button img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -20px;
+}
+.buttons .bookmarks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
