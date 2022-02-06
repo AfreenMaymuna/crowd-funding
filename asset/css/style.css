@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Manrope:wght@500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -14,11 +16,12 @@
 body{
     background-color: salmon;
     color: var(--dark-gray);
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
 }
 h1, h2, h3, h4 ,h5, h6{
     color: var(--black);
 }
-
 
 header{
     background-repeat: no-repeat;
@@ -60,6 +63,7 @@ header{
     top: -80px;
     border-radius: 10px;
     padding: 25px;
+    margin-bottom: 25px;
 }
 .secondary-logo{
     position: absolute;
@@ -79,26 +83,105 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.buttons button{
+button:disabled, button:disabled:hover {
+    background-color: #ddd;
+    cursor: default;
+}
+.btn{
     border: 0;
     background-color: skyblue;
     border-radius: 100px;
     cursor: pointer;
-    padding: 8px 20px;
+    padding: 8px 30px;
     height: 50px;
     color: white;
+    transition: background-color 300ms ease-in-out; 
 }
-.buttons button:first-child{
+.btn-primary{
     background-color: var(--moderate-cyan);
 }
+
+.btn-primary:hover{
+    background-color: rgb(7, 61, 61);
+}
+
 .buttons button img{
     width: 50px;
     height: 50px;
     position: relative;
     left: -20px;
 }
-.buttons .bookmarks{
+.btn-secondary{
+    background-color: silver;
+    color: white;
+    font-weight: 500;
+}
+ .bookmark{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.amount-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.amount-col{
+    border-right: 1px solid rgb(236, 215, 219);
+    padding-right: 8%;
+}
+.amount-col:last-child{
+  border-right: 0px solid transparent;
+}
+.amount-col strong{
+    font-size: 40px;
+    color: black;
+    display: block;
+}
+.horizontal-bar{
+    position: relative;
+}
+.horizontal-bg{
+    background-color: #ddd;
+}
+.horizontal-bg2{
+    background-color: var(--dark-cyan);
+    width: 80%;
+}
+.horizontal-bg, .horizontal-bg2{
+    height: 8px;
+    border-radius: 30px;
+}
+/* Project Details */
+.project-details h2,
+.project-details p{
+    margin-bottom: 25px;
+}
+/* Reward Card */
+.reward-wrapper{
+ border: 1px solid sienna;
+ border-radius: 8px;
+ padding: 30px;
+ margin-bottom: 25px;
+}
+.reward-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.reward-wrapper p{
+  margin-bottom: 20px;
+}
+.reward-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reward-footer-left span {
+   font-size: 30px;
+   color: black;
+   font-weight: bold;
+   margin-right: 8px;
 }
